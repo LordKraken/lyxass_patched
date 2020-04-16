@@ -26,20 +26,20 @@
 #define OPE		14	/* not yet */
 #define OPF		15	/* pseudo - opcode */
 
-int op0();
-int op1();
-int op2();
-int op3();
-int op4();
-int op5();
-int op6();
-int op7();
-int op8();
-int op9();
-int opa();
-int opb();
-int opc();
-int opd();
+int op0(int);
+int op1(int);
+int op2(int);
+int op3(int);
+int op4(int);
+int op5(int);
+int op6(int);
+int op7(int);
+int op8(int);
+int op9(int);
+int opa(int);
+int opb(int);
+int opc(int);
+int opd(int);
 
 
 const struct opcode_s OpCodes[] = {
