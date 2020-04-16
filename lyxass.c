@@ -388,7 +388,18 @@ void CommandLine(int *_argc, char **_argv)
   
 }
 
-struct label_s _cycles = { 6,NORMAL,0,0,0,0,(LABEL *)0,(LABEL *)0,"CYCLES" };
+struct label_s _cycles = { 
+    6,
+    NORMAL,
+    0,
+    0,
+    0,
+    0,
+    0,
+    (LABEL*) 0,
+    (LABEL*) 0,
+    "CYCLES"
+};
 
 int main(int argc, char **argv)
 {
@@ -469,7 +480,7 @@ int main(int argc, char **argv)
 
 	  code.Mem[2] = Global.run >> 8;
 	  code.Mem[3] = Global.run & 0xff;
-	  code.Mem[4] = code.Size >> 8;
+	  code.Mem[4] = (char) code.Size >> 8;
 	  code.Mem[5] = code.Size & 0xff;
 	  
 	  code.Mem[6] = 'B';
